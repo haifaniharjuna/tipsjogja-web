@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-</!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-	</head>
-	<body>
+@extends('layouts.master')
 
-		<div class="container">
+@section('content')
 			<!-- @if(session('sukses'))
 			<div class="alert">
 				{{session('sukses')}}
@@ -103,9 +96,4 @@
 		      </div>
 		    </div>
 		  </div>
-		</div>
-
-		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	</body>
-</html>
-<!-- {{ dd($data_barang)}} -->
+@endsection

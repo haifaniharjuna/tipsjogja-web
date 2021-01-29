@@ -28,4 +28,10 @@ class BarangController extends Controller
     	$barang->update($request->all());
     	return redirect('/barang')->with('sukses','data berhasil diupdate');
     }
+    public function delete(Request $request, $id)
+    {
+        $barang = \App\Models\Barang::find($id);
+        $barang->delete();
+        return redirect('/barang');
+    }
 }

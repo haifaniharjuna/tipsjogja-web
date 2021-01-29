@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-</!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-	</head>
-	<body>
+@extends('layouts.master')
 
-		<div class="container">
+@section('content')
 			<h1>EDIT DATA BARANG</h1>
 			<!-- @if(session('sukses'))
 			<div class="alert">
@@ -53,8 +46,4 @@
 						</form>
 				</div>
 			</div>
-		</div>
-
-		<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-	</body>
-</html>
+@endsection
